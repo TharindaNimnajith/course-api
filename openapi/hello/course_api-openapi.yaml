@@ -9,7 +9,7 @@ paths:
   /hello:
     get:
       summary: "GET hello"
-      operationId: "sayHello"
+      operationId: "sayHello1"
       responses:
         "200":
           description: "OK"
@@ -20,7 +20,7 @@ paths:
   /welcome:
     get:
       summary: "GET welcome"
-      operationId: "sayHello"
+      operationId: "sayHello2"
       responses:
         "200":
           description: "OK"
@@ -32,6 +32,58 @@ paths:
     get:
       summary: "GET bye"
       operationId: "sayBye"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+  /bye*:
+    get:
+      summary: "GET bye*"
+      operationId: "sayBye1"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+  /bye/{variable}:
+    get:
+      summary: "GET bye/*"
+      operationId: "sayBye2"
+      parameters:
+        - name: variable
+          in: path
+          required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+  /bye/<unknown>:
+    get:
+      summary: "GET bye/${..}"
+      operationId: "sayBye3"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+  /bye*/{variable}/test/<unknown>:
+    get:
+      summary: "GET bye*/*/test/${..}"
+      operationId: "sayBye4"
+      parameters:
+        - name: variable
+          in: path
+          required: true
       responses:
         "200":
           description: "OK"
@@ -53,7 +105,7 @@ paths:
   /api/sorry:
     get:
       summary: "GET api/sorry"
-      operationId: "saySorry"
+      operationId: "saySorry1"
       responses:
         "200":
           description: "OK"
@@ -63,7 +115,7 @@ paths:
                 type: "string"
     put:
       summary: "PUT api/sorry"
-      operationId: "saySorry"
+      operationId: "saySorry2"
       responses:
         "200":
           description: "OK"
@@ -73,7 +125,7 @@ paths:
                 type: "string"
     post:
       summary: "POST api/sorry"
-      operationId: "saySorry"
+      operationId: "saySorry3"
       responses:
         "200":
           description: "OK"
@@ -83,7 +135,7 @@ paths:
                 type: "string"
     delete:
       summary: "DELETE api/sorry"
-      operationId: "saySorry"
+      operationId: "saySorry4"
       responses:
         "200":
           description: "OK"
@@ -93,7 +145,7 @@ paths:
                 type: "string"
     options:
       summary: "OPTIONS api/sorry"
-      operationId: "saySorry"
+      operationId: "saySorry5"
       responses:
         "200":
           description: "OK"
@@ -103,7 +155,7 @@ paths:
                 type: "string"
     head:
       summary: "HEAD api/sorry"
-      operationId: "saySorry"
+      operationId: "saySorry6"
       responses:
         "200":
           description: "OK"
@@ -113,7 +165,7 @@ paths:
                 type: "string"
     patch:
       summary: "PATCH api/sorry"
-      operationId: "saySorry"
+      operationId: "saySorry7"
       responses:
         "200":
           description: "OK"
@@ -123,7 +175,7 @@ paths:
                 type: "string"
     trace:
       summary: "TRACE api/sorry"
-      operationId: "saySorry"
+      operationId: "saySorry8"
       responses:
         "200":
           description: "OK"
@@ -134,14 +186,14 @@ paths:
   /:
     get:
       summary: "GET "
-      operationId: "redirectRequest"
+      operationId: "redirectRequest1"
       responses:
         "200":
           description: "OK"
   /redirect:
     get:
       summary: "GET redirect"
-      operationId: "redirectRequest"
+      operationId: "redirectRequest2"
       responses:
         "200":
           description: "OK"

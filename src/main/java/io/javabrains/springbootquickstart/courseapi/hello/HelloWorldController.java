@@ -22,6 +22,30 @@ public class HelloWorldController {
         return "Good Bye!";
     }
 
+    @GetMapping("/bye*")
+    private String sayBye1() {
+        System.out.println("bye*");
+        return "Good Bye 1!";
+    }
+
+    @GetMapping("/bye/*")
+    private String sayBye2() {
+        System.out.println("bye/*");
+        return "Good Bye 2!";
+    }
+
+    @GetMapping("/bye/**")
+    private String sayBye3() {
+        System.out.println("/bye/**");
+        return "Good Bye 3!";
+    }
+
+    @GetMapping("/bye*/*/test/**")
+    private String sayBye4() {
+        System.out.println("bye/*/test/**");
+        return "Good Bye 4!";
+    }
+
     @GetMapping(value = "/hi")
     private String sayHi() {
         System.out.println("hi");

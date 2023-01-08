@@ -1,0 +1,23 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="course_api-openapi.yaml" type="SwaggerCodegen" singleton="false">
+    <option name="activeConfigurationType" value="FILE" />
+    <option name="configurationPath" value="" />
+    <option name="customJreEnabled" value="false" />
+    <option name="customTemplatesPath" value="" />
+    <option name="enableDebugLogging" value="true" />
+    <option name="generateToPath" value="D:\course-api\gen" />
+    <option name="generationParameters">
+      <list>
+        <CliArgumentViewModel>
+          <option name="name" value="" />
+          <option name="value" value="" />
+        </CliArgumentViewModel>
+      </list>
+    </option>
+    <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+    <option name="jdkPath" value="Default" />
+    <option name="language" value="java" />
+    <option name="specificationPath" value="C:\Users\ASUS\AppData\Roaming\JetBrains\IntelliJIdea2022.3\openApiExport\course_api-openapi.yaml" />
+    <method v="2" />
+  </configuration>
+</component>
