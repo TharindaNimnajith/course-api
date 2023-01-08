@@ -1,0 +1,154 @@
+openapi: "3.0.3"
+info:
+  title: "course_api API"
+  description: "course_api API"
+  version: "1.0.0"
+servers:
+- url: "https://course_api"
+paths:
+  /hello:
+    get:
+      summary: "GET hello"
+      operationId: "sayHello"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+  /welcome:
+    get:
+      summary: "GET welcome"
+      operationId: "sayHello"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+  /bye:
+    get:
+      summary: "GET bye"
+      operationId: "sayBye"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+  /hi:
+    get:
+      summary: "GET hi"
+      operationId: "sayHi"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+  /api/sorry:
+    get:
+      summary: "GET api/sorry"
+      operationId: "saySorry"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+    put:
+      summary: "PUT api/sorry"
+      operationId: "saySorry"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+    post:
+      summary: "POST api/sorry"
+      operationId: "saySorry"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+    delete:
+      summary: "DELETE api/sorry"
+      operationId: "saySorry"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+    options:
+      summary: "OPTIONS api/sorry"
+      operationId: "saySorry"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+    head:
+      summary: "HEAD api/sorry"
+      operationId: "saySorry"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+    patch:
+      summary: "PATCH api/sorry"
+      operationId: "saySorry"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+    trace:
+      summary: "TRACE api/sorry"
+      operationId: "saySorry"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+  /:
+    get:
+      summary: "GET "
+      operationId: "redirectRequest"
+      responses:
+        "200":
+          description: "OK"
+  /redirect:
+    get:
+      summary: "GET redirect"
+      operationId: "redirectRequest"
+      responses:
+        "200":
+          description: "OK"
+  /<unknown>:
+    get:
+      summary: "GET ${..}"
+      operationId: "redirectAll"
+      responses:
+        "200":
+          description: "OK"

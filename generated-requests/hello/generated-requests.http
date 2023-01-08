@@ -1,0 +1,59 @@
+###
+GET http://localhost:8080/hello
+
+<> 2023-01-09T004958.200.txt
+
+###
+GET http://localhost:8080/hello/
+
+<> 2023-01-09T004958-1.200.txt
+
+###
+GET http://localhost:8080/welcome
+
+<> 2023-01-09T004958-2.200.txt
+
+###
+GET http://localhost:8080/welcome/
+
+<> 2023-01-09T004958-3.200.txt
+
+###
+GET http://localhost:8080/bye
+
+<> 2023-01-09T004959.200.txt
+
+###
+GET http://localhost:8080/hi
+
+<> 2023-01-09T004959-1.200.txt
+
+###
+GET http://localhost:8080/api/sorry
+
+<> 2023-01-09T004959-2.200.txt
+
+###
+GET http://localhost:8080/
+
+<> 2023-01-09T004959-3.200.txt
+
+###
+GET http://localhost:8080/redirect
+
+<> 2023-01-09T004959-4.200.txt
+
+###
+GET http://localhost:8080/redirect/
+
+<> 2023-01-09T004959-5.200.txt
+
+###
+GET http://localhost:8080/test
+
+<> 2023-01-09T004959-6.200.txt
+
+###
+GET http://localhost:8080/bye/
+
+<> 2023-01-09T005000.200.txt
