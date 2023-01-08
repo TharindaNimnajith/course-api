@@ -35,13 +35,13 @@ import java.util.Map;
 import java.util.Objects;
 
 public class JSON {
-    private Gson gson;
-    private boolean isLenientOnJson = false;
     private final DateTypeAdapter dateTypeAdapter = new DateTypeAdapter();
     private final SqlDateTypeAdapter sqlDateTypeAdapter = new SqlDateTypeAdapter();
     private final OffsetDateTimeTypeAdapter offsetDateTimeTypeAdapter = new OffsetDateTimeTypeAdapter();
     private final LocalDateTypeAdapter localDateTypeAdapter = new LocalDateTypeAdapter();
     private final ByteArrayAdapter byteArrayAdapter = new ByteArrayAdapter();
+    private Gson gson;
+    private boolean isLenientOnJson = false;
 
     public JSON() {
         gson = createGson()

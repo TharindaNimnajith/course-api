@@ -50,10 +50,10 @@ import java.util.regex.Pattern;
 
 public class ApiClient {
 
-    private String basePath = "https://course_api";
-    private boolean debugging = false;
     private final Map<String, String> defaultHeaderMap = new HashMap<String, String>();
     private final Map<String, String> defaultCookieMap = new HashMap<String, String>();
+    private String basePath = "https://course_api";
+    private boolean debugging = false;
     private String tempFolderPath = null;
 
     private Map<String, Authentication> authentications;
