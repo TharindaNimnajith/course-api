@@ -23,7 +23,7 @@ sourceSets {
     main.java.srcDirs = ['src/main/java']
 }
 
-if(hasProperty('target') && target == 'android') {
+if (hasProperty('target') && target == 'android') {
 
     apply plugin: 'com.android.library'
     apply plugin: 'com.github.dcendents.android-maven'
@@ -91,9 +91,9 @@ if(hasProperty('target') && target == 'android') {
         }
     }
 
-    task execute(type:JavaExec) {
-       main = System.getProperty('mainClass')
-       classpath = sourceSets.main.runtimeClasspath
+    task execute(type: JavaExec) {
+        main = System.getProperty('mainClass')
+        classpath = sourceSets.main.runtimeClasspath
     }
 }
 
@@ -111,5 +111,5 @@ dependencies {
 }
 
 javadoc {
-    options.tags = [ "http.response.details:a:Http Response Details" ]
+    options.tags = ["http.response.details:a:Http Response Details"]
 }
