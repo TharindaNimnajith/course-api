@@ -24,6 +24,7 @@ import org.springframework.web.servlet.ModelAndView;
 // @RequestMapping default value for method is RequestMethod.GET
 // @RequestMapping, @GetMapping, etc. default parameter is value
 
+@SuppressWarnings("SameReturnValue")
 @RestController
 @RequestMapping("/")
 public class HelloWorldController {
