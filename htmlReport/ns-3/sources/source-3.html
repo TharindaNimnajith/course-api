@@ -1,0 +1,160 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > TopicService</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">io.javabrains.springbootquickstart.courseapi.topic</a>
+</div>
+
+<h1>Coverage Summary for Class: TopicService (io.javabrains.springbootquickstart.courseapi.topic)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">TopicService</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    16.7%
+  </span>
+  <span class="absValue">
+    (1/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (3/12)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package io.javabrains.springbootquickstart.courseapi.topic;
+&nbsp;
+&nbsp;import org.springframework.stereotype.Service;
+&nbsp;
+&nbsp;import java.util.ArrayList;
+&nbsp;import java.util.Arrays;
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;@Service
+<b class="fc">&nbsp;public class TopicService {</b>
+&nbsp;
+<b class="fc">&nbsp;    private final List&lt;Topic&gt; topics = new ArrayList&lt;&gt;(</b>
+<b class="fc">&nbsp;        Arrays.asList(</b>
+&nbsp;            new Topic(&quot;springboot&quot;, &quot;Spring Boot&quot;, &quot;Spring Boot Description&quot;),
+&nbsp;            new Topic(&quot;java&quot;, &quot;Java&quot;, &quot;Java Description&quot;),
+&nbsp;            new Topic(&quot;javascript&quot;, &quot;Javascript&quot;, &quot;Javascript Description&quot;)
+&nbsp;        )
+&nbsp;    );
+&nbsp;
+&nbsp;    public void addTopic(Topic topic) {
+<b class="nc">&nbsp;        topics.add(topic);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void updateTopic(String id, Topic newTopic) {
+<b class="nc">&nbsp;        for (int i = 0; i &lt; topics.size(); i++) {</b>
+<b class="nc">&nbsp;            Topic topic = topics.get(i);</b>
+<b class="nc">&nbsp;            if (topic.getId().equals(id)) {</b>
+<b class="nc">&nbsp;                topics.set(i, newTopic);</b>
+<b class="nc">&nbsp;                break;</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    public void deleteTopic(String id) {
+<b class="nc">&nbsp;        topics.removeIf(topic -&gt; topic.getId().equals(id));</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public Topic getTopic(String id) {
+&nbsp;        // return topics.stream().filter(topic -&gt; topic.getId().equals(id)).findFirst().get();
+&nbsp;        // &#39;Optional.get()&#39; without &#39;isPresent()&#39; check
+&nbsp;        //
+&nbsp;        // The main design goal of Optional is to provide a means for a function returning a value to indicate the
+&nbsp;        // absence of a return value
+&nbsp;        // This allows the caller to continue a chain of fluent method calls
+&nbsp;        //
+&nbsp;        // An alternative of throwing NoSuchElementException was replaced by returning an Optional
+&nbsp;        // Having Optional enables to do fluent API thingies like:
+&nbsp;        // stream.getFirst().orElseThrow(() -&gt; new MyFancyException())
+&nbsp;
+&nbsp;        // orElse(null) -&gt; Returns the value if present, otherwise returns null
+<b class="nc">&nbsp;        return topics.stream().filter(topic -&gt; topic.getId().equals(id)).findFirst().orElse(null);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public List&lt;Topic&gt; getTopics() {
+<b class="nc">&nbsp;        return topics;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-01-16 02:39</div>
+</div>
+</body>
+</html>

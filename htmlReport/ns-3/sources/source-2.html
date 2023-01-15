@@ -1,0 +1,198 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > TopicController</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">io.javabrains.springbootquickstart.courseapi.topic</a>
+</div>
+
+<h1>Coverage Summary for Class: TopicController (io.javabrains.springbootquickstart.courseapi.topic)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">TopicController</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    14.3%
+  </span>
+  <span class="absValue">
+    (1/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (2/8)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package io.javabrains.springbootquickstart.courseapi.topic;
+&nbsp;
+&nbsp;import org.springframework.beans.factory.annotation.Autowired;
+&nbsp;import org.springframework.web.bind.annotation.*;
+&nbsp;
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;@RestController
+&nbsp;public class TopicController {
+&nbsp;
+&nbsp;    // Spring Dependency Injection Types:
+&nbsp;    //
+&nbsp;    // 01. Constructor-based dependency injection - Class constructor is annotated with @Autowired and includes a
+&nbsp;    // variable number of arguments with the objects to be injected
+&nbsp;    //
+&nbsp;    // 02. Setter-based dependency injection - Setter methods are annotated with @Autowired and Spring container will
+&nbsp;    // call these setter methods once the Bean is instantiated
+&nbsp;    //
+&nbsp;    // 03. Field-based dependency injection - Fields/properties are annotated with @Autowired and Spring container will
+&nbsp;    // set these fields once the class is instantiated
+&nbsp;
+&nbsp;    // final keyword in Java:
+&nbsp;    // If a variable is final, its value cannot be changed (constant)
+&nbsp;    // If a method is final, it cannot be overridden
+&nbsp;    // If a class is final, it cannot be extended
+&nbsp;    private final TopicService topicServiceConstructor;
+&nbsp;
+&nbsp;    // Field-based dependency injection is elegant, avoids the boilerplate code for getters and setters or creating
+&nbsp;    // constructors for the class
+&nbsp;    // But it has the following drawbacks:
+&nbsp;    // 01. Disallows final/immutable field declaration
+&nbsp;    // 02. Eases single responsibility principle violation
+&nbsp;    // 03. Tightly coupled with dependency injection container
+&nbsp;    // 04. Hidden dependencies
+&nbsp;
+&nbsp;    // Field-based dependency injection
+&nbsp;    @SuppressWarnings(&quot;SpringJavaAutowiredFieldsWarningInspection&quot;)
+&nbsp;    @Autowired // Annotation is mandatory
+&nbsp;    private TopicService topicService;
+&nbsp;
+&nbsp;    // Field injection is not recommended, because the list of required dependencies are unclear during instance
+&nbsp;    // creation which makes testing more difficult and could lead to runtime exceptions when the bean is instantiated
+&nbsp;    // without spring
+&nbsp;    //
+&nbsp;    // To clearly state the required dependencies of the class, they should be added to the constructor that has the
+&nbsp;    // @Autowired annotation, so that these dependencies can be provided more easily through Spring&#39;s dependency
+&nbsp;    // injection mechanism
+&nbsp;    //
+&nbsp;    // Constructor-based injection is recommended for required dependencies allowing them to be immutable and
+&nbsp;    // preventing them to be null
+&nbsp;    //
+&nbsp;    // Setter-based injection is recommended for optional dependencies
+&nbsp;    //
+&nbsp;    // As of Spring Framework 4.3, an @Autowired annotation on such a constructor is no longer necessary if the target
+&nbsp;    // bean only defines one constructor to begin with
+&nbsp;    // However, if several constructors are available, at least one must be annotated to teach the container which one
+&nbsp;    // to use
+&nbsp;
+&nbsp;    // Constructor-based dependency injection
+&nbsp;    @Autowired // Annotation is optional
+<b class="fc">&nbsp;    public TopicController(TopicService topicServiceConstructor) {</b>
+<b class="fc">&nbsp;        this.topicServiceConstructor = topicServiceConstructor;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @PostMapping(&quot;/topics&quot;)
+&nbsp;    public void addTopic(@RequestBody Topic topic) {
+<b class="nc">&nbsp;        topicService.addTopic(topic);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @PutMapping(&quot;/topics/{id}&quot;)
+&nbsp;    public void updateTopic(@PathVariable String id, @RequestBody Topic topic) {
+<b class="nc">&nbsp;        topicService.updateTopic(id, topic);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @DeleteMapping(&quot;/topics/{id}&quot;)
+&nbsp;    public void deleteTopic(@PathVariable String id) {
+<b class="nc">&nbsp;        topicService.deleteTopic(id);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/topics/{id}&quot;)
+&nbsp;    public Topic getTopic(@PathVariable String id) {
+<b class="nc">&nbsp;        return topicService.getTopic(id);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/topics/foo/{foo}&quot;)
+&nbsp;    public Topic getTopicFoo(@PathVariable(&quot;foo&quot;) String id) {
+<b class="nc">&nbsp;        return topicServiceConstructor.getTopic(id);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/topics&quot;)
+&nbsp;    public List&lt;Topic&gt; getTopics() {
+<b class="nc">&nbsp;        return topicService.getTopics();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-01-16 02:39</div>
+</div>
+</body>
+</html>

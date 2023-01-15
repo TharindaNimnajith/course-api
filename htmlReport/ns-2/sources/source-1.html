@@ -1,0 +1,239 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > HelloWorldController</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">io.javabrains.springbootquickstart.courseapi.hello</a>
+</div>
+
+<h1>Coverage Summary for Class: HelloWorldController (io.javabrains.springbootquickstart.courseapi.hello)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">HelloWorldController</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    7.7%
+  </span>
+  <span class="absValue">
+    (1/13)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    3.7%
+  </span>
+  <span class="absValue">
+    (1/27)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package io.javabrains.springbootquickstart.courseapi.hello;
+&nbsp;
+&nbsp;import jakarta.servlet.http.HttpServletResponse;
+&nbsp;import org.springframework.web.bind.annotation.GetMapping;
+&nbsp;import org.springframework.web.bind.annotation.RequestMapping;
+&nbsp;import org.springframework.web.bind.annotation.RequestMethod;
+&nbsp;import org.springframework.web.bind.annotation.RestController;
+&nbsp;import org.springframework.web.servlet.ModelAndView;
+&nbsp;
+&nbsp;// @GetMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.GET)
+&nbsp;// @GetMapping is the newer annotation
+&nbsp;//
+&nbsp;// Both supports consumes
+&nbsp;// Consume options are:
+&nbsp;//     consumes = &quot;text/plain&quot;
+&nbsp;//     consumes = {
+&nbsp;//         &quot;text/plain&quot;,
+&nbsp;//         &quot;application/*&quot;
+&nbsp;//     }
+&nbsp;//
+&nbsp;// @GetMapping can be applied only on method level
+&nbsp;// @RequestMapping can be applied on class level and method level
+&nbsp;//
+&nbsp;// @RequestMapping default value for method is RequestMethod.GET
+&nbsp;// @RequestMapping, @GetMapping, etc. default parameter is value
+&nbsp;
+&nbsp;@SuppressWarnings(&quot;SameReturnValue&quot;)
+&nbsp;@RestController
+&nbsp;@RequestMapping(&quot;/&quot;)
+<b class="fc">&nbsp;public class HelloWorldController {</b>
+&nbsp;
+&nbsp;    // public boolean useTrailingSlashMatch()
+&nbsp;    // Whether to match to URLs irrespective of the presence of a trailing slash
+&nbsp;    //
+&nbsp;    // @Deprecated(since=&quot;6.0&quot;)
+&nbsp;    // public void setUseTrailingSlashMatch(boolean useTrailingSlashMatch)
+&nbsp;    // If enabled a method mapped to &quot;/users&quot; also matches to &quot;/users/&quot;
+&nbsp;    // The default value is true
+&nbsp;    //
+&nbsp;    // Trailing slash is not inserted in Spring Boot application
+&nbsp;    // It only does that in the case of the contextRoot which in a Spring Boot application is usually /, so going to
+&nbsp;    // http://localhost:8080 will redirect to http://localhost:8080/
+&nbsp;    // Since setUseTrailingSlashMatch() is deprecated, configure redirect views as a list
+&nbsp;
+&nbsp;    @GetMapping(value = {&quot;/hello&quot;, &quot;/hello/&quot;, &quot;/welcome&quot;, &quot;/welcome/&quot;})
+&nbsp;    private String sayHello() {
+<b class="nc">&nbsp;        System.out.println(&quot;hello&quot;);</b>
+<b class="nc">&nbsp;        return &quot;Hello World!&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/bye&quot;)
+&nbsp;    private String sayBye() {
+<b class="nc">&nbsp;        System.out.println(&quot;bye&quot;);</b>
+<b class="nc">&nbsp;        return &quot;Good Bye!&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // /welcome* -&gt; Anything in THIS folder or URL section, that starts with &quot;/welcome&quot; and ends before next &quot;/&quot; like
+&nbsp;    // /welcomePage
+&nbsp;    //
+&nbsp;    // /welcome** -&gt; Any URL, that starts with &quot;/welcome&quot; including sub-folders and subsections of URL pattern like
+&nbsp;    // /welcome/section2/section3/ or /welcomePage/index
+&nbsp;    //
+&nbsp;    // /welcome/* -&gt; Any file, folder or section inside welcome (before next &quot;/&quot;) like /welcome/index
+&nbsp;    //
+&nbsp;    // /welcome/** -&gt; Any files, folders, sections, sub-folders or subsections inside welcome
+&nbsp;    //
+&nbsp;    // One asterisk * ends before next &quot;/&quot;, two asterisks ** have no limits
+&nbsp;
+&nbsp;    @GetMapping(&quot;/bye*&quot;)
+&nbsp;    private String sayBye1() {
+<b class="nc">&nbsp;        System.out.println(&quot;bye*&quot;);</b>
+<b class="nc">&nbsp;        return &quot;Good Bye 1!&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/bye/*&quot;)
+&nbsp;    private String sayBye2() {
+<b class="nc">&nbsp;        System.out.println(&quot;bye/*&quot;);</b>
+<b class="nc">&nbsp;        return &quot;Good Bye 2!&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/bye/**&quot;)
+&nbsp;    private String sayBye3() {
+<b class="nc">&nbsp;        System.out.println(&quot;/bye/**&quot;);</b>
+<b class="nc">&nbsp;        return &quot;Good Bye 3!&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/bye*/*/test/**&quot;)
+&nbsp;    private String sayBye4() {
+<b class="nc">&nbsp;        System.out.println(&quot;bye/*/test/**&quot;);</b>
+<b class="nc">&nbsp;        return &quot;Good Bye 4!&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(value = &quot;/hi&quot;)
+&nbsp;    private String sayHi() {
+<b class="nc">&nbsp;        System.out.println(&quot;hi&quot;);</b>
+<b class="nc">&nbsp;        return &quot;Hi!&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @RequestMapping(&quot;/api/sorry&quot;)
+&nbsp;    private String saySorry() {
+<b class="nc">&nbsp;        System.out.println(&quot;sorry&quot;);</b>
+<b class="nc">&nbsp;        return &quot;Sorry!&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // Redirect requests using method 1
+&nbsp;    @RequestMapping(value = {&quot;&quot;, &quot;/&quot;, &quot;/redirect&quot;, &quot;/redirect/&quot;}, method = RequestMethod.GET)
+&nbsp;    public void redirectRequest(HttpServletResponse httpServletResponse) {
+<b class="nc">&nbsp;        System.out.println(&quot;redirect hello&quot;);</b>
+<b class="nc">&nbsp;        httpServletResponse.setHeader(&quot;Location&quot;, &quot;/hello&quot;);</b>
+<b class="nc">&nbsp;        httpServletResponse.setStatus(302);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // Redirect requests using method 2
+&nbsp;    @RequestMapping(value = {&quot;/redirect1&quot;, &quot;/redirect1/&quot;}, method = RequestMethod.GET)
+&nbsp;    public ModelAndView redirectRequest1() {
+<b class="nc">&nbsp;        System.out.println(&quot;redirect 1 hello&quot;);</b>
+<b class="nc">&nbsp;        return new ModelAndView(&quot;redirect:&quot; + &quot;/hello&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // DOES NOT WORK
+&nbsp;    // Redirect requests using method 3
+&nbsp;    @RequestMapping(value = {&quot;/redirect2&quot;, &quot;/redirect2/&quot;}, method = RequestMethod.GET)
+&nbsp;    public String redirectRequest2() {
+<b class="nc">&nbsp;        System.out.println(&quot;redirect 2 hello&quot;);</b>
+<b class="nc">&nbsp;        return &quot;redirect:&quot; + &quot;/hello&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // Redirect requests using method 1 with wildcard characters to redirect all other undefined URL routes
+&nbsp;    @RequestMapping(value = &quot;/**&quot;, method = RequestMethod.GET)
+&nbsp;    public void redirectAll(HttpServletResponse httpServletResponse) {
+<b class="nc">&nbsp;        System.out.println(&quot;redirect all&quot;);</b>
+<b class="nc">&nbsp;        httpServletResponse.setHeader(&quot;Location&quot;, &quot;/hi&quot;);</b>
+<b class="nc">&nbsp;        httpServletResponse.setStatus(302);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-01-16 02:39</div>
+</div>
+</body>
+</html>
