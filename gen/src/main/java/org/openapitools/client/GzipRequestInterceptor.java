@@ -35,9 +35,9 @@ class GzipRequestInterceptor implements Interceptor {
         }
 
         Request compressedRequest = originalRequest.newBuilder()
-                .header("Content-Encoding", "gzip")
-                .method(originalRequest.method(), forceContentLength(gzip(originalRequest.body())))
-                .build();
+            .header("Content-Encoding", "gzip")
+            .method(originalRequest.method(), forceContentLength(gzip(originalRequest.body())))
+            .build();
         return chain.proceed(compressedRequest);
     }
 

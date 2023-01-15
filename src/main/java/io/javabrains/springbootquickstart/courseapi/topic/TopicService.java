@@ -10,15 +10,20 @@ import java.util.List;
 public class TopicService {
 
     private final List<Topic> topics = new ArrayList<>(
-            Arrays.asList(
-                    new Topic("springboot", "Spring Boot", "Spring Boot Description"),
-                    new Topic("java", "Java", "Java Description"),
-                    new Topic("javascript", "Javascript", "Javascript Description")
-            )
+        Arrays.asList(
+            new Topic("springboot", "Spring Boot", "Spring Boot Description"),
+            new Topic("java", "Java", "Java Description"),
+            new Topic("javascript", "Javascript", "Javascript Description")
+        )
     );
 
     public List<Topic> getTopics() {
         return topics;
+    }
+
+    public Topic getTopic(String id) {
+        // return topics.stream().filter(topic -> topic.getId().equals(id)).findFirst().get();
+        return topics.stream().filter(topic -> topic.getId().equals(id)).findFirst().orElse(null);
     }
 
 }
