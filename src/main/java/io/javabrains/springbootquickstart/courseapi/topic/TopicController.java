@@ -8,33 +8,19 @@ import java.util.List;
 @RestController
 public class TopicController {
 
-    private final TopicService topicService1;
     @SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
     @Autowired
     private TopicService topicService;
 
+    private final TopicService topicServiceConstructor;
+
     public TopicController(TopicService topicService) {
-        this.topicService1 = topicService;
+        this.topicServiceConstructor = topicService;
     }
 
-    @GetMapping("/topics")
-    public List<Topic> getTopics() {
-        return topicService.getTopics();
-    }
-
-    @GetMapping("/topics/foo/{foo}")
-    public Topic getTopicFoo(@PathVariable("foo") String id) {
-        return topicService1.getTopic(id);
-    }
-
-    @GetMapping("/topics/{id}")
-    public Topic getTopic(@PathVariable String id) {
-        return topicService.getTopic(id);
-    }
-
-    @DeleteMapping("/topics/{id}")
-    public void deleteTopic(@PathVariable String id) {
-        topicService.deleteTopic(id);
+    @PostMapping("/topics")
+    public void addTopic(@RequestBody Topic topic) {
+        topicService.addTopic(topic);
     }
 
     @PutMapping("/topics/{id}")
@@ -42,9 +28,24 @@ public class TopicController {
         topicService.updateTopic(id, topic);
     }
 
-    @PostMapping("/topics")
-    public void addTopic(@RequestBody Topic topic) {
-        topicService.addTopic(topic);
+    @DeleteMapping("/topics/{id}")
+    public void deleteTopic(@PathVariable String id) {
+        topicService.deleteTopic(id);
+    }
+
+    @GetMapping("/topics/{id}")
+    public Topic getTopic(@PathVariable String id) {
+        return topicService.getTopic(id);
+    }
+
+    @GetMapping("/topics/foo/{foo}")
+    public Topic getTopicFoo(@PathVariable("foo") String id) {
+        return topicServiceConstructor.getTopic(id);
+    }
+
+    @GetMapping("/topics")
+    public List<Topic> getTopics() {
+        return topicService.getTopics();
     }
 
 }
