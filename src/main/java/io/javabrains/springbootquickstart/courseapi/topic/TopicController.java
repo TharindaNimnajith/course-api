@@ -8,6 +8,11 @@ import java.util.List;
 @RestController
 public class TopicController {
 
+    // Dependency Injection is a fundamental aspect of the Spring framework, through which the Spring container
+    // "injects" objects into other objects or "dependencies"
+    // This allows for loose coupling of components and moves the responsibility of managing components onto the
+    // Spring container
+    //
     // Spring Dependency Injection Types:
     //
     // 01. Constructor-based dependency injection - Class constructor is annotated with @Autowired and includes a
@@ -16,8 +21,8 @@ public class TopicController {
     // 02. Setter-based dependency injection - Setter methods are annotated with @Autowired and Spring container will
     // call these setter methods once the Bean is instantiated
     //
-    // 03. Field-based dependency injection - Fields/properties are annotated with @Autowired and Spring container will
-    // set these fields once the class is instantiated
+    // 03. Field-based dependency injection (Reflection) - Fields/properties are annotated with @Autowired and Spring
+    // container will set these fields once the class is instantiated
 
     // final keyword in Java:
     // If a variable is final, its value cannot be changed (constant)
@@ -27,11 +32,13 @@ public class TopicController {
 
     // Field-based dependency injection is elegant, avoids the boilerplate code for getters and setters or creating
     // constructors for the class
-    // But it has the following drawbacks:
+    // But it has the following drawbacks compared to Constructor-based dependency injection:
     // 01. Disallows final/immutable field declaration
     // 02. Eases single responsibility principle violation
     // 03. Tightly coupled with dependency injection container
     // 04. Hidden dependencies
+    // 05. Less testability
+    // 06. Unsafe code
 
     // Field-based dependency injection
     @SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
