@@ -1,13 +1,19 @@
 package io.javabrains.springbootquickstart.courseapi.topic;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 @SuppressWarnings("unused")
+@Entity
 public class Topic {
 
+    @Id
     private String id;
     private String name;
     private String description;
 
     public Topic() {
+        super();
         id = "";
         name = "";
         description = "";

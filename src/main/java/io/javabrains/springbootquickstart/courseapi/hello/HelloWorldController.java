@@ -54,15 +54,15 @@ public class HelloWorldController {
         return "Good Bye!";
     }
 
-    // /welcome* -> anything in THIS folder or URL section, that starts with "/welcome" and ends before next "/" like
+    // /welcome* -> Anything in THIS folder or URL section, that starts with "/welcome" and ends before next "/" like
     // /welcomePage
     //
-    // /welcome** -> any URL, that starts with "/welcome" including sub-folders and subsections of URL pattern like
+    // /welcome** -> Any URL, that starts with "/welcome" including sub-folders and subsections of URL pattern like
     // /welcome/section2/section3/ or /welcomePage/index
     //
-    // /welcome/* -> any file, folder or section inside welcome (before next "/") like /welcome/index
+    // /welcome/* -> Any file, folder or section inside welcome (before next "/") like /welcome/index
     //
-    // /welcome/** -> any files, folders, sections, sub-folders or subsections inside welcome
+    // /welcome/** -> Any files, folders, sections, sub-folders or subsections inside welcome
     //
     // One asterisk * ends before next "/", two asterisks ** have no limits
 

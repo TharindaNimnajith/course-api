@@ -1,9 +1,7 @@
 package io.javabrains.springbootquickstart.courseapi.topic;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,6 +30,21 @@ public class TopicController {
     @GetMapping("/topics/{id}")
     public Topic getTopic(@PathVariable String id) {
         return topicService.getTopic(id);
+    }
+
+    @DeleteMapping("/topics/{id}")
+    public void deleteTopic(@PathVariable String id) {
+        topicService.deleteTopic(id);
+    }
+
+    @PutMapping("/topics/{id}")
+    public void updateTopic(@PathVariable String id, @RequestBody Topic topic) {
+        topicService.updateTopic(id, topic);
+    }
+
+    @PostMapping("/topics")
+    public void addTopic(@RequestBody Topic topic) {
+        topicService.addTopic(topic);
     }
 
 }
