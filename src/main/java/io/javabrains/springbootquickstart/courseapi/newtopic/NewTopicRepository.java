@@ -1,7 +1,6 @@
 package io.javabrains.springbootquickstart.courseapi.newtopic;
 
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 // JpaRepository extends PagingAndSortingRepository which in turn extends CrudRepository
 // CrudRepository mainly provides CRUD functions
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Repository;
 // Due to the inheritance, JpaRepository has all the functions of CrudRepository and PagingAndSortingRepository
 // If the repository does not need functions provided by JpaRepository & PagingAndSortingRepository, use CrudRepository
 
-@Repository
-public interface NewTopicRepository extends CrudRepository<NewTopic, String> {
+public interface NewTopicRepository extends JpaRepository<NewTopic, String> {
     //
 }

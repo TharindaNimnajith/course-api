@@ -2,9 +2,11 @@ package io.javabrains.springbootquickstart.courseapi.newtopic;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @SuppressWarnings("unused")
 @Entity
+@Table(name = "Topics")
 public class NewTopic {
 
     @Id

@@ -27,9 +27,7 @@ public class NewTopicService {
     }
 
     public List<NewTopic> getTopics() {
-        List<NewTopic> newTopics = new ArrayList<>();
-        newTopicRepository.findAll().forEach(newTopics::add);
-        return newTopics;
+        return new ArrayList<>(newTopicRepository.findAll());
     }
 
 }
