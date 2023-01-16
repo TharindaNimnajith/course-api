@@ -9,6 +9,7 @@ class CourseApiApplicationTests {
     @SuppressWarnings("EmptyMethod")
     @Test
     void contextLoads() {
+        //
     }
 
 }
