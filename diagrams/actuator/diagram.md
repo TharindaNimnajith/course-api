@@ -5,4 +5,4 @@ class helloWorldController
 class topicController
 class topicService
 
-topicController  ..>  topicService 
+topicController ..>  topicService 
