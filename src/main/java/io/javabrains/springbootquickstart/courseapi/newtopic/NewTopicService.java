@@ -3,43 +3,33 @@ package io.javabrains.springbootquickstart.courseapi.newtopic;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Service
 public class NewTopicService {
 
-    private final List<NewTopic> topics = new ArrayList<>(
-        Arrays.asList(
-            new NewTopic("springboot", "Spring Boot", "Spring Boot Description"),
-            new NewTopic("java", "Java", "Java Description"),
-            new NewTopic("javascript", "Javascript", "Javascript Description")
-        )
-    );
+    private final NewTopicRepository newTopicRepository;
 
-    public void addTopic(NewTopic topic) {
-        topics.add(topic);
+    public NewTopicService(NewTopicRepository newTopicRepository) {
+        this.newTopicRepository = newTopicRepository;
     }
 
-    public void updateTopic(String id, NewTopic newTopic) {
-        for (int i = 0; i < topics.size(); i++) {
-            NewTopic topic = topics.get(i);
-            if (topic.getId().equals(id)) {
-                topics.set(i, newTopic);
-                break;
-            }
-        }
+    public void saveTopic(NewTopic topic) {
+        newTopicRepository.save(topic);
     }
 
     public void deleteTopic(String id) {
-        topics.removeIf(topic -> topic.getId().equals(id));
+        newTopicRepository.deleteById(id);
     }
 
     public NewTopic getTopic(String id) {
-        return topics.stream().filter(topic -> topic.getId().equals(id)).findFirst().orElse(null);
+        return newTopicRepository.findById(id).orElse(null);
     }
 
     public List<NewTopic> getTopics() {
+        List<NewTopic> topics = new ArrayList<>();
+        newTopicRepository.findAll().forEach(topics::add);
         return topics;
     }
+
 }

@@ -16,12 +16,12 @@ public class NewTopicController {
 
     @PostMapping("/topics")
     public void addTopic(@RequestBody NewTopic topic) {
-        newTopicService.addTopic(topic);
+        newTopicService.saveTopic(topic);
     }
 
-    @PutMapping("/topics/{id}")
-    public void updateTopic(@PathVariable String id, @RequestBody NewTopic topic) {
-        newTopicService.updateTopic(id, topic);
+    @PutMapping("/topics")
+    public void updateTopic(@RequestBody NewTopic topic) {
+        newTopicService.saveTopic(topic);
     }
 
     @DeleteMapping("/topics/{id}")
