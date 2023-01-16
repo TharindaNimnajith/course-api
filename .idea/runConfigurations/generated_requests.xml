@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" singleton="false" environment="dev" path="$PROJECT_DIR$/generated-requests/hello/generated-requests.http">
+    <method v="2" />
+  </configuration>
+</component>

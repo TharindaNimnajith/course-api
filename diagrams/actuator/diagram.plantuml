@@ -1,0 +1,13 @@
+@startuml
+
+!theme plain
+left to right direction
+skinparam linetype ortho
+
+class courseApiApplication
+class helloWorldController
+class topicController
+class topicService
+
+topicController       -[#000082,dashed]->  topicService         
+@enduml
