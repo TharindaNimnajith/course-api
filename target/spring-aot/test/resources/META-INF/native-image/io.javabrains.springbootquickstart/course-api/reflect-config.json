@@ -1,0 +1,88 @@
+[
+  {
+    "name": "io.javabrains.springbootquickstart.courseapi.CourseApiApplication",
+    "allPublicMethods": true
+  },
+  {
+    "name": "org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.test.context.transaction.TransactionalTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "io.javabrains.springbootquickstart.courseapi.CourseApiApplication$$SpringCGLIB$$0",
+    "allDeclaredConstructors": true,
+    "allDeclaredFields": true,
+    "allDeclaredMethods": true
+  },
+  {
+    "name": "org.springframework.test.context.support.DirtiesContextTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.test.context.aot.AotTestContextInitializers__Generated",
+    "allPublicMethods": true
+  },
+  {
+    "name": "org.springframework.boot.test.context.SpringBootTestContextBootstrapper",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.test.context.event.ApplicationEventsTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.test.context.web.ServletTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.boot.test.context.SpringBootContextLoader",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.test.context.event.EventPublishingTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.test.context.aot.AotTestAttributes__Generated",
+    "allPublicMethods": true
+  },
+  {
+    "name": "org.springframework.test.context.support.DependencyInjectionTestExecutionListener",
+    "allDeclaredConstructors": true
+  }
+]
