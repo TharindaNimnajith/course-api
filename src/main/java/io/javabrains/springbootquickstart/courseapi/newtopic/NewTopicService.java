@@ -14,8 +14,8 @@ public class NewTopicService {
         this.newTopicRepository = newTopicRepository;
     }
 
-    public void saveTopic(NewTopic topic) {
-        newTopicRepository.save(topic);
+    public void saveTopic(NewTopic newTopic) {
+        newTopicRepository.save(newTopic);
     }
 
     public void deleteTopic(String id) {
@@ -27,9 +27,9 @@ public class NewTopicService {
     }
 
     public List<NewTopic> getTopics() {
-        List<NewTopic> topics = new ArrayList<>();
-        newTopicRepository.findAll().forEach(topics::add);
-        return topics;
+        List<NewTopic> newTopics = new ArrayList<>();
+        newTopicRepository.findAll().forEach(newTopics::add);
+        return newTopics;
     }
 
 }

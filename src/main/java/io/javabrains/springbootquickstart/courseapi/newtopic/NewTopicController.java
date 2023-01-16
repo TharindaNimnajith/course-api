@@ -10,18 +10,18 @@ public class NewTopicController {
 
     private final NewTopicService newTopicService;
 
-    public NewTopicController(NewTopicService topicService) {
-        this.newTopicService = topicService;
+    public NewTopicController(NewTopicService newTopicService) {
+        this.newTopicService = newTopicService;
     }
 
     @PostMapping("/topics")
-    public void addTopic(@RequestBody NewTopic topic) {
-        newTopicService.saveTopic(topic);
+    public void addTopic(@RequestBody NewTopic newTopic) {
+        newTopicService.saveTopic(newTopic);
     }
 
     @PutMapping("/topics")
-    public void updateTopic(@RequestBody NewTopic topic) {
-        newTopicService.saveTopic(topic);
+    public void updateTopic(@RequestBody NewTopic newTopic) {
+        newTopicService.saveTopic(newTopic);
     }
 
     @DeleteMapping("/topics/{id}")
