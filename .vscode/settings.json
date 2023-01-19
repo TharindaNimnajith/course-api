@@ -1,0 +1,8 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "editor.fontSize": 16,
+    "scm.inputFontSize": 14,
+    "debug.console.fontSize": 16,
+    "markdown.preview.fontSize": 18,
+    "terminal.integrated.fontSize": 16
+}
