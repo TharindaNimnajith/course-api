@@ -2,7 +2,6 @@ package io.javabrains.springbootquickstart.courseapi.lesson;
 
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -27,9 +26,15 @@ public class LessonService {
     }
 
     public List<Lesson> getLessons() {
-        List<Lesson> lessons = new ArrayList<>();
-        lessonRepository.findAll().forEach(lessons::add);
-        return lessons;
+        return (List<Lesson>) lessonRepository.findAll();
+    }
+
+    public List<Lesson> getLessonsByName(String name) {
+        return lessonRepository.findByName(name);
+    }
+
+    public List<Lesson> getLessonsByCourseId(String courseId) {
+        return lessonRepository.findByCourseId(courseId);
     }
 
 }
