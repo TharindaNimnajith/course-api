@@ -39,20 +39,17 @@ public class CourseController {
         return courseService.getCourse(id);
     }
 
-    @SuppressWarnings("MVCPathVariableInspection")
-    @GetMapping("topics/{topicId}/courses/all")
+    @GetMapping("courses")
     public List<Course> getCourses() {
         return courseService.getCourses();
     }
 
-    @SuppressWarnings("MVCPathVariableInspection")
-    @GetMapping("topics/{topicId}/courses/name/{name}")
+    @GetMapping("courses/name/{name}")
     public List<Course> getCoursesByName(@PathVariable String name) {
         return courseService.getCoursesByName(name);
     }
 
-    @SuppressWarnings("MVCPathVariableInspection")
-    @GetMapping("topics/{topicId}/courses/description/{description}")
+    @GetMapping("courses/description/{description}")
     public List<Course> getCoursesByDescription(@PathVariable String description) {
         return courseService.getCoursesByDescription(description);
     }
