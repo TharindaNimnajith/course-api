@@ -12,9 +12,14 @@
     <option name="diagramMode" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="lesson api basic methods">
-      <change beforePath="$PROJECT_DIR$/SECURITY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SECURITY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/Lesson.class" afterDir="false" />
+    <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="code refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/Lesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +61,29 @@
 }</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1674496248" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="add-license-1" />
+                    <option name="lastUsedInstant" value="1674496242" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
@@ -202,7 +230,8 @@
       <workItem from="1674291373264" duration="3000" />
       <workItem from="1674473315099" duration="3525000" />
       <workItem from="1674491363122" duration="160000" />
-      <workItem from="1674491566311" duration="4469000" />
+      <workItem from="1674491566311" duration="6258000" />
+      <workItem from="1674498738474" duration="4015000" />
     </task>
     <task id="LOCAL-00001" summary="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools">
       <created>1673171245212</created>
@@ -442,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674494998256</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="code refactoring">
+      <created>1674497926671</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1674497926671</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +497,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools" />
-    <MESSAGE value="code refactoring" />
     <MESSAGE value="hello controller, get mappings, redirects, openapi, request generation, log levels" />
     <MESSAGE value="openapi documentation" />
     <MESSAGE value="add comments" />
@@ -484,7 +519,8 @@
     <MESSAGE value="actuator, derby/derbylient, course, lesson" />
     <MESSAGE value="course api get methods" />
     <MESSAGE value="lesson api basic methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson api basic methods" />
+    <MESSAGE value="code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -3,7 +3,15 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.45">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <Grants>5||-9223372036854775808|c|G
+      <Grants>1||-9223372036854775808|c|G
+1||10|c|G
+1||10|C|G
+1||10|T|G
+4||-9223372036854775808|c|G
+4||10|c|G
+4||10|C|G
+4||10|T|G
+5||-9223372036854775808|c|G
 5||10|c|G
 5||16594|c|G
 5||10|C|G
@@ -11,9 +19,9 @@
 5||-9223372036854775808|T|G
 5||10|T|G
 5||16594|T|G</Grants>
-      <IntrospectionStateNumber>1024</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1042</IntrospectionStateNumber>
       <ServerVersion>15.1</ServerVersion>
-      <StartupTime>1673895759</StartupTime>
+      <StartupTime>1674498708</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -863,7 +871,7 @@ false Zulu
 16769||16420|C|G
 16769||16420|U|G
 16769||16729|U|G</Grants>
-      <IntrospectionStateNumber>1024</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1042</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4751,7 +4759,7 @@ idle_in_transaction_session_timeout=60000</Config>
 27023||16477|w|G
 27023||16478|w|G
 27023||16479|w|G</Grants>
-      <IntrospectionStateNumber>1024</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1042</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>747</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4834,7 +4842,7 @@ SECURITY LABEL</Tags>
     </table>
     <table id="300" parent="287" name="lessons">
       <ObjectId>27023</ObjectId>
-      <StateNumber>1017</StateNumber>
+      <StateNumber>1041</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4905,7 +4913,29 @@ SECURITY LABEL</Tags>
       <StateNumber>1017</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="310" parent="300" name="lessons_pkey">
+    <column id="310" parent="300" name="name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>1039</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="311" parent="300" name="course_id">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>1040</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="312" parent="300" name="fk17ucc7gjfjddsyi0gvstkqeat">
+      <ColNames>course_id</ColNames>
+      <ObjectId>27037</ObjectId>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>1041</StateNumber>
+      <RefTableId>27018</RefTableId>
+      <RefTableName>courses</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="313" parent="300" name="lessons_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>27026</ObjectId>
@@ -4917,33 +4947,33 @@ SECURITY LABEL</Tags>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="311" parent="300" name="lessons_pkey">
+    <key id="314" parent="300" name="lessons_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>27027</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1017</StateNumber>
       <UnderlyingIndexId>27026</UnderlyingIndexId>
     </key>
-    <column id="312" parent="301" name="id">
+    <column id="315" parent="301" name="id">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1008</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="313" parent="301" name="description">
+    <column id="316" parent="301" name="description">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
       <StateNumber>1008</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="314" parent="301" name="name">
+    <column id="317" parent="301" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
       <StateNumber>1008</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="315" parent="301" name="topics_pkey">
+    <index id="318" parent="301" name="topics_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>27016</ObjectId>
@@ -4955,7 +4985,7 @@ SECURITY LABEL</Tags>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="316" parent="301" name="topics_pkey">
+    <key id="319" parent="301" name="topics_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>27017</ObjectId>
       <Primary>1</Primary>

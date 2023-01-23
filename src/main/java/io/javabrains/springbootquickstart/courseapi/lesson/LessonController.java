@@ -1,5 +1,6 @@
 package io.javabrains.springbootquickstart.courseapi.lesson;
 
+import io.javabrains.springbootquickstart.courseapi.course.Course;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,22 +15,28 @@ public class LessonController {
         this.lessonService = lessonService;
     }
 
-    @PostMapping("lessons")
-    public void addLesson(@RequestBody Lesson lesson) {
+    @SuppressWarnings("MVCPathVariableInspection")
+    @PostMapping("topics/{topicId}/courses/{courseId}/lessons")
+    public void addLesson(@RequestBody Lesson lesson, @PathVariable String courseId) {
+        lesson.setCourse(new Course(courseId, "", "", ""));
         lessonService.saveLesson(lesson);
     }
 
-    @PutMapping("lessons")
-    public void updateLesson(@RequestBody Lesson lesson) {
+    @SuppressWarnings("MVCPathVariableInspection")
+    @PutMapping("topics/{topicId}/courses/{courseId}/lessons")
+    public void updateLesson(@RequestBody Lesson lesson, @PathVariable String courseId) {
+        lesson.setCourse(new Course(courseId, "", "", ""));
         lessonService.saveLesson(lesson);
     }
 
-    @DeleteMapping("lessons/{id}")
+    @SuppressWarnings("MVCPathVariableInspection")
+    @DeleteMapping("topics/{topicId}/courses/{courseId}/lessons/{id}")
     public void deleteLesson(@PathVariable String id) {
         lessonService.deleteLesson(id);
     }
 
-    @GetMapping("lessons/{id}")
+    @SuppressWarnings("MVCPathVariableInspection")
+    @GetMapping("topics/{topicId}/courses/{courseId}/lessons/{id}")
     public Lesson getLesson(@PathVariable String id) {
         return lessonService.getLesson(id);
     }
@@ -44,7 +51,8 @@ public class LessonController {
         return lessonService.getLessonsByName(name);
     }
 
-    @GetMapping("courses/{courseId}/lessons")
+    @SuppressWarnings("MVCPathVariableInspection")
+    @GetMapping("topics/{topicId}/courses/{courseId}/lessons")
     public List<Lesson> getLessonsByCourseId(@PathVariable String courseId) {
         return lessonService.getLessonsByCourseId(courseId);
     }
