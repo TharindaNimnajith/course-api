@@ -1,0 +1,38 @@
+@startuml
+
+!theme plain
+left to right direction
+skinparam linetype ortho
+
+class courseApiApplication
+class courseController
+class courseRepository
+class node15 as "courseRepository.fragments#0"
+class courseService
+class helloWorldController
+class jpaSharedEM_entityManagerFactory
+class lessonController
+class lessonRepository
+class node2 as "lessonRepository.fragments#0"
+class lessonService
+class newTopicController
+class newTopicRepository
+class node8 as "newTopicRepository.fragments#0"
+class newTopicService
+class topicController
+class topicService
+
+courseController                  -[#000082,dashed]->  courseService                    
+courseRepository                  -[#000082,dashed]->  node15                           
+courseRepository                  -[#000082,dashed]->  jpaSharedEM_entityManagerFactory 
+courseService                     -[#000082,dashed]->  courseRepository                 
+lessonController                  -[#000082,dashed]->  lessonService                    
+lessonRepository                  -[#000082,dashed]->  jpaSharedEM_entityManagerFactory 
+lessonRepository                  -[#000082,dashed]->  node2                            
+lessonService                     -[#000082,dashed]->  lessonRepository                 
+newTopicController                -[#000082,dashed]->  newTopicService                  
+newTopicRepository                -[#000082,dashed]->  jpaSharedEM_entityManagerFactory 
+newTopicRepository                -[#000082,dashed]->  node8                            
+newTopicService                   -[#000082,dashed]->  newTopicRepository               
+topicController                   -[#000082,dashed]->  topicService                     
+@enduml
