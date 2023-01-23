@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BeansEndpointTabSettings">
+    <option name="diagramMode" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="lesson api basic methods">
+      <change beforePath="$PROJECT_DIR$/SECURITY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SECURITY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/Lesson.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="D:\course-api\htmlReport" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Public Environment File" />
+        <option value="HTTP Private Environment File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5371d522-ef61-4e4d-96ab-1ac2c4e88c7e" />
+        <option name="url" value="https://github.com/TharindaNimnajith/course-api.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="sign-artifacts" />
+        <option value="native" />
+        <option value="nativeTest" />
+      </list>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2K2Gll0C7sLZs3BVmSJtl9bgJT9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;ResourceManagerPrefKey.ResourceType&quot;: &quot;DRAWABLE&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/course-api/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;58f73e08413c2e0bbf8405d7320e38b8&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;derby&quot;,
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\lesson" />
+      <recent name="D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\course" />
+      <recent name="D:\course-api\gen\target\generated-sources\annotations" />
+      <recent name="D:\course-api\gen\target\classes" />
+      <recent name="D:\course-api\target\generated-test-sources\test-annotations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\course-api\gen\target\generated-sources\annotations" />
+      <recent name="D:\course-api\diagrams\actuator" />
+      <recent name="D:\course-api\diagrams" />
+      <recent name="D:\course-api\openapi\hello" />
+      <recent name="D:\course-api\generated-api-requests\hello" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CourseApiApplication">
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="true" />
+      <option name="generateToPath" value="D:\course-api\gen" />
+      <option name="generationParameters">
+        <list>
+          <CliArgumentViewModel>
+            <option name="name" value="" />
+            <option name="value" value="" />
+          </CliArgumentViewModel>
+        </list>
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+      <option name="jdkPath" value="Default" />
+      <option name="language" value="java" />
+      <option name="specificationPath" value="C:\Users\ASUS\AppData\Roaming\JetBrains\IntelliJIdea2022.3\openApiExport\course_api-openapi.yaml" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests" />
+      <item itemvalue="Spring Boot.CourseApiApplication" />
+      <item itemvalue="Swagger Codegen.course_api-openapi.yaml" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="" />
+      <created>1673165424207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673165424207</updated>
+      <workItem from="1673165424223" duration="3344000" />
+      <workItem from="1673171877971" duration="68000" />
+      <workItem from="1673171949562" duration="16000" />
+      <workItem from="1673171984922" duration="669000" />
+      <workItem from="1673184167711" duration="1412000" />
+      <workItem from="1673199745628" duration="11121000" />
+      <workItem from="1673210950033" duration="642000" />
+      <workItem from="1673249343588" duration="5000" />
+      <workItem from="1673787106046" duration="240000" />
+      <workItem from="1673787369104" duration="22042000" />
+      <workItem from="1673844801859" duration="1399000" />
+      <workItem from="1673846230983" duration="7374000" />
+      <workItem from="1673855060242" duration="2333000" />
+      <workItem from="1673882182699" duration="9671000" />
+      <workItem from="1673897128107" duration="2629000" />
+      <workItem from="1673934971333" duration="3533000" />
+      <workItem from="1674022693865" duration="1967000" />
+      <workItem from="1674121573267" duration="2907000" />
+      <workItem from="1674156210970" duration="64000" />
+      <workItem from="1674291373264" duration="3000" />
+      <workItem from="1674473315099" duration="3525000" />
+      <workItem from="1674491363122" duration="160000" />
+      <workItem from="1674491566311" duration="4469000" />
+    </task>
+    <task id="LOCAL-00001" summary="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools">
+      <created>1673171245212</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673171245212</updated>
+    </task>
+    <task id="LOCAL-00002" summary="code refactoring">
+      <created>1673171478475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673171478475</updated>
+    </task>
+    <task id="LOCAL-00003" summary="hello controller, get mappings, redirects, openapi, request generation, log levels">
+      <created>1673205679071</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673205679071</updated>
+    </task>
+    <task id="LOCAL-00004" summary="openapi documentation">
+      <created>1673209912076</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673209912076</updated>
+    </task>
+    <task id="LOCAL-00005" summary="openapi documentation">
+      <created>1673210723867</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673210723867</updated>
+    </task>
+    <task id="LOCAL-00006" summary="openapi documentation">
+      <created>1673211194646</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673211194646</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add comments">
+      <created>1673793057992</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673793057992</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add comments">
+      <created>1673793065151</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673793065151</updated>
+    </task>
+    <task id="LOCAL-00009" summary="topic entity, controller, service to getAllTopics">
+      <created>1673795286816</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673795286816</updated>
+    </task>
+    <task id="LOCAL-00010" summary="get single topic">
+      <created>1673798386304</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673798386304</updated>
+    </task>
+    <task id="LOCAL-00011" summary="get single topic">
+      <created>1673799933189</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673799933189</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add, delete, update, JPA Entity/Id, application properties, actuator, Optional/orElse, Autowired/Constructor">
+      <created>1673807514564</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673807514564</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactoring method order">
+      <created>1673808131386</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673808131386</updated>
+    </task>
+    <task id="LOCAL-00014" summary="spring dependency injection types">
+      <created>1673816865958</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673816865958</updated>
+    </task>
+    <task id="LOCAL-00015" summary="coverage reports">
+      <created>1673817072367</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673817072367</updated>
+    </task>
+    <task id="LOCAL-00016" summary="coverage reports">
+      <created>1673817183990</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1673817183990</updated>
+    </task>
+    <task id="LOCAL-00017" summary="profiler">
+      <created>1673817747670</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1673817747670</updated>
+    </task>
+    <task id="LOCAL-00018" summary="dependency injection notes">
+      <created>1673818608469</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1673818608469</updated>
+    </task>
+    <task id="LOCAL-00019" summary="actuator diagrams, code coverage reports">
+      <created>1673847434847</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1673847434847</updated>
+    </task>
+    <task id="LOCAL-00020" summary="actuator diagrams, code coverage reports">
+      <created>1673847509247</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1673847509247</updated>
+    </task>
+    <task id="LOCAL-00021" summary="new topic package with CrudRepository">
+      <created>1673851801420</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1673851801420</updated>
+    </task>
+    <task id="LOCAL-00022" summary="CrudRepository methods">
+      <created>1673854322999</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1673854322999</updated>
+    </task>
+    <task id="LOCAL-00023" summary="CrudRepository methods">
+      <created>1673855519101</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1673855519102</updated>
+    </task>
+    <task id="LOCAL-00024" summary="CrudRepository vs. JpaRepository">
+      <created>1673856357538</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1673856357538</updated>
+    </task>
+    <task id="LOCAL-00025" summary="maven">
+      <created>1673892036372</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1673892036372</updated>
+    </task>
+    <task id="LOCAL-00026" summary="maven">
+      <created>1673892063576</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1673892063576</updated>
+    </task>
+    <task id="LOCAL-00027" summary="remove derby and add postgres">
+      <created>1673898031329</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1673898031329</updated>
+    </task>
+    <task id="LOCAL-00028" summary="JpaRepository vs. CrudRepository">
+      <created>1673898388646</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1673898388646</updated>
+    </task>
+    <task id="LOCAL-00029" summary="maven wrapper">
+      <created>1673899092151</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1673899092151</updated>
+    </task>
+    <task id="LOCAL-00030" summary="actuator, derby/derbylient, course, lesson">
+      <created>1674124345409</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1674124345409</updated>
+    </task>
+    <task id="LOCAL-00031" summary="actuator, derby/derbylient, course, lesson">
+      <created>1674124407004</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1674124407004</updated>
+    </task>
+    <task id="LOCAL-00032" summary="course api get methods">
+      <created>1674476068319</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1674476068319</updated>
+    </task>
+    <task id="LOCAL-00033" summary="course api get methods">
+      <created>1674492759669</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1674492759669</updated>
+    </task>
+    <task id="LOCAL-00034" summary="lesson api basic methods">
+      <created>1674494998256</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1674494998256</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools" />
+    <MESSAGE value="code refactoring" />
+    <MESSAGE value="hello controller, get mappings, redirects, openapi, request generation, log levels" />
+    <MESSAGE value="openapi documentation" />
+    <MESSAGE value="add comments" />
+    <MESSAGE value="topic entity, controller, service to getAllTopics" />
+    <MESSAGE value="get single topic" />
+    <MESSAGE value="add, delete, update, JPA Entity/Id, application properties, actuator, Optional/orElse, Autowired/Constructor" />
+    <MESSAGE value="refactoring method order" />
+    <MESSAGE value="spring dependency injection types" />
+    <MESSAGE value="coverage reports" />
+    <MESSAGE value="profiler" />
+    <MESSAGE value="dependency injection notes" />
+    <MESSAGE value="actuator diagrams, code coverage reports" />
+    <MESSAGE value="new topic package with CrudRepository" />
+    <MESSAGE value="CrudRepository methods" />
+    <MESSAGE value="CrudRepository vs. JpaRepository" />
+    <MESSAGE value="maven" />
+    <MESSAGE value="remove derby and add postgres" />
+    <MESSAGE value="JpaRepository vs. CrudRepository" />
+    <MESSAGE value="maven wrapper" />
+    <MESSAGE value="actuator, derby/derbylient, course, lesson" />
+    <MESSAGE value="course api get methods" />
+    <MESSAGE value="lesson api basic methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson api basic methods" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/course_api$CourseApiApplication.ic" NAME="CourseApiApplication Coverage Results" MODIFIED="1673847137912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
