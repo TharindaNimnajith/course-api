@@ -1,0 +1,232 @@
+openapi: 3.0.3
+info:
+  description: course_api API
+  title: course_api API
+  version: 1.0.0
+servers:
+- url: https://course_api
+paths:
+  /hello:
+    get:
+      operationId: sayHello1
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: GET hello
+      x-accepts: '*/*'
+  /welcome:
+    get:
+      operationId: sayHello2
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: GET welcome
+      x-accepts: '*/*'
+  /bye:
+    get:
+      operationId: sayBye
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: GET bye
+      x-accepts: '*/*'
+  /bye*:
+    get:
+      operationId: sayBye1
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: GET bye*
+      x-accepts: '*/*'
+  /bye/{variable}:
+    get:
+      operationId: sayBye2
+      parameters:
+      - explode: false
+        in: path
+        name: variable
+        required: true
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: GET bye/*
+      x-accepts: '*/*'
+  /bye/<unknown>:
+    get:
+      operationId: sayBye3
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: GET bye/${..}
+      x-accepts: '*/*'
+  /bye*/{variable}/test/<unknown>:
+    get:
+      operationId: sayBye4
+      parameters:
+      - explode: false
+        in: path
+        name: variable
+        required: true
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: GET bye*/*/test/${..}
+      x-accepts: '*/*'
+  /hi:
+    get:
+      operationId: sayHi
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: GET hi
+      x-accepts: '*/*'
+  /api/sorry:
+    delete:
+      operationId: saySorry4
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: DELETE api/sorry
+      x-accepts: '*/*'
+    get:
+      operationId: saySorry1
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: GET api/sorry
+      x-accepts: '*/*'
+    head:
+      operationId: saySorry6
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: HEAD api/sorry
+      x-accepts: '*/*'
+    options:
+      operationId: saySorry5
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: OPTIONS api/sorry
+      x-accepts: '*/*'
+    patch:
+      operationId: saySorry7
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: PATCH api/sorry
+      x-accepts: '*/*'
+    post:
+      operationId: saySorry3
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: POST api/sorry
+      x-accepts: '*/*'
+    put:
+      operationId: saySorry2
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: PUT api/sorry
+      x-accepts: '*/*'
+    trace:
+      operationId: saySorry8
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: TRACE api/sorry
+      x-accepts: '*/*'
+  /:
+    get:
+      operationId: redirectRequest1
+      responses:
+        "200":
+          description: OK
+      summary: 'GET '
+      x-accepts: application/json
+  /redirect:
+    get:
+      operationId: redirectRequest2
+      responses:
+        "200":
+          description: OK
+      summary: GET redirect
+      x-accepts: application/json
+  /<unknown>:
+    get:
+      operationId: redirectAll
+      responses:
+        "200":
+          description: OK
+      summary: GET ${..}
+      x-accepts: application/json
+components:
+  schemas: {}
+
