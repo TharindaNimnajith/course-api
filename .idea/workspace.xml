@@ -13,29 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="github packages">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-aot/test/resources/META-INF/native-image/io.javabrains.springbootquickstart/course-api/proxy-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-aot/test/resources/META-INF/native-image/io.javabrains.springbootquickstart/course-api/proxy-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-aot/test/resources/META-INF/native-image/io.javabrains.springbootquickstart/course-api/reflect-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-aot/test/resources/META-INF/native-image/io.javabrains.springbootquickstart/course-api/reflect-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-aot/test/sources/io/javabrains/springbootquickstart/courseapi/CourseApiApplicationTests__TestContext001_BeanFactoryRegistrations.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-aot/test/sources/io/javabrains/springbootquickstart/courseapi/CourseApiApplicationTests__TestContext001_BeanFactoryRegistrations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-aot/test/sources/io/javabrains/springbootquickstart/courseapi/course/CourseRepository__TestContext001_BeanDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-aot/test/sources/io/javabrains/springbootquickstart/courseapi/course/CourseRepository__TestContext001_BeanDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-aot/test/sources/io/javabrains/springbootquickstart/courseapi/lesson/LessonRepository__TestContext001_BeanDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-aot/test/sources/io/javabrains/springbootquickstart/courseapi/lesson/LessonRepository__TestContext001_BeanDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-aot/test/sources/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-aot/test/sources/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-aot/test/sources/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring1.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-aot/test/sources/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-aot/test/sources/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring2.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-aot/test/sources/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-aot/test/sources/org/springframework/data/repository/core/support/RepositoryComposition__TestContext001_BeanDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-aot/test/sources/org/springframework/data/repository/core/support/RepositoryComposition__TestContext001_BeanDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-25T15-20-55_860-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-io.javabrains.springbootquickstart.courseapi.CourseApiApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-io.javabrains.springbootquickstart.courseapi.CourseApiApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/io.javabrains.springbootquickstart.courseapi.CourseApiApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/io.javabrains.springbootquickstart.courseapi.CourseApiApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/native-image/io.javabrains.springbootquickstart/course-api/proxy-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/native-image/io.javabrains.springbootquickstart/course-api/proxy-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/native-image/io.javabrains.springbootquickstart/course-api/reflect-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/native-image/io.javabrains.springbootquickstart/course-api/reflect-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/javabrains/springbootquickstart/courseapi/CourseApiApplicationTests__TestContext001_BeanFactoryRegistrations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/javabrains/springbootquickstart/courseapi/CourseApiApplicationTests__TestContext001_BeanFactoryRegistrations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/javabrains/springbootquickstart/courseapi/course/CourseRepository__TestContext001_BeanDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/javabrains/springbootquickstart/courseapi/course/CourseRepository__TestContext001_BeanDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonRepository__TestContext001_BeanDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonRepository__TestContext001_BeanDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean__TestContext001_Autowiring2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-ids/junit-platform-unique-ids-1117506497512835320.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +227,7 @@
       <workItem from="1674491566311" duration="6258000" />
       <workItem from="1674498738474" duration="5304000" />
       <workItem from="1674590843068" duration="1717000" />
-      <workItem from="1674638562118" duration="3263000" />
+      <workItem from="1674638562118" duration="3632000" />
     </task>
     <task id="LOCAL-00001" summary="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools">
       <created>1673171245212</created>
@@ -524,7 +502,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674640489864</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="github packages">
+      <created>1674641853868</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1674641853868</updated>
+    </task>
+    <task id="LOCAL-00041" summary="github packages">
+      <created>1674641866829</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1674641866829</updated>
+    </task>
+    <task id="LOCAL-00042" summary="github packages">
+      <created>1674641901362</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1674641901362</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
