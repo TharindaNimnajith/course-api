@@ -13,7 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="github packages">
-      <change beforePath="$PROJECT_DIR$/profiles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,6 +231,8 @@
       <workItem from="1674498738474" duration="5304000" />
       <workItem from="1674590843068" duration="1717000" />
       <workItem from="1674638562118" duration="3632000" />
+      <workItem from="1674644111795" duration="123000" />
+      <workItem from="1674646033931" duration="3217000" />
     </task>
     <task id="LOCAL-00001" summary="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools">
       <created>1673171245212</created>
