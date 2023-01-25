@@ -1,9 +1,17 @@
 D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\topic\TopicService.java
 D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\newtopic\NewTopic.java
 D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\topic\TopicController.java
+D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\lesson\LessonRepository.java
 D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\topic\Topic.java
 D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\newtopic\NewTopicService.java
 D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\hello\HelloWorldController.java
+D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\lesson\Lesson.java
+D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\course\CourseService.java
+D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\course\Course.java
+D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\course\CourseRepository.java
+D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\lesson\LessonController.java
+D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\course\CourseController.java
 D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\newtopic\NewTopicController.java
 D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\CourseApiApplication.java
+D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\lesson\LessonService.java
 D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\newtopic\NewTopicRepository.java

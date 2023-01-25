@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <!--Authenticating to GitHub Packages with a personal access token-->
+  <!--<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"-->
+  <!--          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+  <!--          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0-->
+  <!--                              http://maven.apache.org/xsd/settings-1.0.0.xsd">-->
+  <!--  <activeProfiles>-->
+  <!--    <activeProfile>github</activeProfile>-->
+  <!--  </activeProfiles>-->
+  <!--  <profiles>-->
+  <!--    <profile>-->
+  <!--      <id>github</id>-->
+  <!--      <repositories>-->
+  <!--        <repository>-->
+  <!--          <id>central</id>-->
+  <!--          <url>https://repo1.maven.org/maven2</url>-->
+  <!--        </repository>-->
+  <!--        <repository>-->
+  <!--          <id>github</id>-->
+  <!--          <url>https://maven.pkg.github.com/tharindanimnajith/course-api</url>-->
+  <!--          <snapshots>-->
+  <!--            <enabled>true</enabled>-->
+  <!--          </snapshots>-->
+  <!--        </repository>-->
+  <!--      </repositories>-->
+  <!--    </profile>-->
+  <!--  </profiles>-->
+  <!--  <servers>-->
+  <!--    <server>-->
+  <!--      <id>github</id>-->
+  <!--      <username>tharindanimnajith</username>-->
+  <!--      <password>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</password>-->
+  <!--    </server>-->
+  <!--  </servers>-->
+  <!--</settings>-->
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>3.0.1</version>
-    <relativePath/> <!-- lookup parent from repository -->
+    <relativePath/> <!--lookup parent from repository-->
   </parent>
   <groupId>io.javabrains.springbootquickstart</groupId>
   <artifactId>course-api</artifactId>
@@ -16,12 +52,26 @@
   <properties>
     <java.version>17</java.version>
   </properties>
+  <!--By default, GitHub publishes the package to an existing repository with the same name as the package-->
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub tharindanimnajith Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/tharindanimnajith/course-api</url>
+    </repository>
+  </distributionManagement>
   <dependencies>
+    <!--To install an Apache Maven package from GitHub Packages, include the package as a dependency-->
+    <!--<dependency>-->
+    <!--  <groupId>io.javabrains.springbootquickstart.courseapi</groupId>-->
+    <!--  <artifactId>course-api</artifactId>-->
+    <!--  <version>0.0.1-SNAPSHOT</version>-->
+    <!--</dependency>-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
-    <!--suppress VulnerableLibrariesLocal -->
+    <!--suppress VulnerableLibrariesLocal-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
@@ -56,6 +106,7 @@
       <artifactId>postgresql</artifactId>
       <scope>runtime</scope>
     </dependency>
+    <!--Apache Derby Embedded Database-->
     <!--<dependency>-->
     <!--  <groupId>org.apache.derby</groupId>-->
     <!--  <artifactId>derby</artifactId>-->

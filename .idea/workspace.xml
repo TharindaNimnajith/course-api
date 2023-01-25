@@ -12,13 +12,9 @@
     <option name="diagramMode" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="basic lesson api methods">
-      <change beforePath="$PROJECT_DIR$/diagrams/actuator/diagram.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/actuator/diagram.graphml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/actuator/diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/actuator/diagram.plantuml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/actuator/diagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/actuator/with_libraries.png" beforeDir="false" />
+    <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="lesson apis">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,35 +119,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "ResourceManagerPrefKey.ResourceType": "DRAWABLE",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/course-api/diagrams/actuator/v2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "58f73e08413c2e0bbf8405d7320e38b8",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;ResourceManagerPrefKey.ResourceType&quot;: &quot;DRAWABLE&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/course-api/diagrams/actuator/v2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;58f73e08413c2e0bbf8405d7320e38b8&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "derby",
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;derby&quot;,
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\course-api\src\main\java\io\javabrains\springbootquickstart\courseapi\lesson" />
@@ -230,7 +226,9 @@
       <workItem from="1674473315099" duration="3525000" />
       <workItem from="1674491363122" duration="160000" />
       <workItem from="1674491566311" duration="6258000" />
-      <workItem from="1674498738474" duration="5146000" />
+      <workItem from="1674498738474" duration="5304000" />
+      <workItem from="1674590843068" duration="1717000" />
+      <workItem from="1674638562118" duration="1706000" />
     </task>
     <task id="LOCAL-00001" summary="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools">
       <created>1673171245212</created>
@@ -491,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674506435959</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="lesson apis">
+      <created>1674507467206</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1674507467206</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools" />
     <MESSAGE value="hello controller, get mappings, redirects, openapi, request generation, log levels" />
     <MESSAGE value="openapi documentation" />
     <MESSAGE value="add comments" />
@@ -534,7 +538,8 @@
     <MESSAGE value="lesson api basic methods" />
     <MESSAGE value="code refactoring" />
     <MESSAGE value="basic lesson api methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic lesson api methods" />
+    <MESSAGE value="lesson apis" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson apis" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
