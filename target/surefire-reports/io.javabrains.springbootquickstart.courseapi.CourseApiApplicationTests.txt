@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: io.javabrains.springbootquickstart.courseapi.CourseApiApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.399 s - in io.javabrains.springbootquickstart.courseapi.CourseApiApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.77 s - in io.javabrains.springbootquickstart.courseapi.CourseApiApplicationTests

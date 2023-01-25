@@ -16,7 +16,7 @@ public class RepositoryComposition__TestContext001_BeanDefinitions {
    */
   public static class RepositoryFragments__BeanDefinitions {
     /**
-     * Get the bean instance supplier for 'jpa.LessonRepository.fragments#0'.
+     * Get the bean instance supplier for 'jpa.CourseRepository.fragments#0'.
      */
     private static BeanInstanceSupplier<RepositoryFragmentsFactoryBean> getFragmentsInstanceSupplier(
         ) {
@@ -37,7 +37,7 @@ public class RepositoryComposition__TestContext001_BeanDefinitions {
     }
 
     /**
-     * Get the bean instance supplier for 'jpa.CourseRepository.fragments#0'.
+     * Get the bean instance supplier for 'jpa.LessonRepository.fragments#0'.
      */
     private static BeanInstanceSupplier<RepositoryFragmentsFactoryBean> getFragmentsInstanceSupplier1(
         ) {

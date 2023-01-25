@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <!--Authenticating to GitHub Packages with a personal access token-->
   <!--<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"-->
   <!--          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
-  <!--          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0-->
-  <!--                              http://maven.apache.org/xsd/settings-1.0.0.xsd">-->
+  <!--          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">-->
   <!--  <activeProfiles>-->
   <!--    <activeProfile>github</activeProfile>-->
   <!--  </activeProfiles>-->
@@ -33,7 +31,7 @@
   <!--    <server>-->
   <!--      <id>github</id>-->
   <!--      <username>tharindanimnajith</username>-->
-  <!--      <password>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</password>-->
+  <!--      <password>TOKEN</password>-->
   <!--    </server>-->
   <!--  </servers>-->
   <!--</settings>-->

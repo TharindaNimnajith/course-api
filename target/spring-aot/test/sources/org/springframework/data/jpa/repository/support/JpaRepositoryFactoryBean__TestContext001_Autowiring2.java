@@ -14,8 +14,8 @@ public class JpaRepositoryFactoryBean__TestContext001_Autowiring2 {
    */
   public static JpaRepositoryFactoryBean apply(RegisteredBean registeredBean,
       JpaRepositoryFactoryBean instance) {
-    AutowiredMethodArgumentsResolver.forRequiredMethod("setEntityPathResolver", ObjectProvider.class).resolve(registeredBean, args -> instance.setEntityPathResolver(args.get(0)));
     AutowiredMethodArgumentsResolver.forRequiredMethod("setQueryMethodFactory", JpaQueryMethodFactory.class).resolve(registeredBean, args -> instance.setQueryMethodFactory(args.get(0)));
+    AutowiredMethodArgumentsResolver.forRequiredMethod("setEntityPathResolver", ObjectProvider.class).resolve(registeredBean, args -> instance.setEntityPathResolver(args.get(0)));
     return instance;
   }
 }

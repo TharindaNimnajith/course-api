@@ -399,11 +399,11 @@ public class CourseApiApplicationTests__TestContext001_BeanFactoryRegistrations 
     beanFactory.registerBeanDefinition("org.springframework.data.jpa.util.JpaMetamodelCacheCleanup", JpaMetamodelCacheCleanup__TestContext001_BeanDefinitions.getJpaMetamodelCacheCleanupBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension", JpaEvaluationContextExtension__TestContext001_BeanDefinitions.getJpaEvaluationContextExtensionBeanDefinition());
     beanFactory.registerBeanDefinition("jpa.named-queries#0", PropertiesBasedNamedQueries__TestContext001_BeanDefinitions.getNamedqueriesBeanDefinition());
-    beanFactory.registerBeanDefinition("jpa.LessonRepository.fragments#0", RepositoryComposition__TestContext001_BeanDefinitions.RepositoryFragments__BeanDefinitions.getFragmentsBeanDefinition());
-    beanFactory.registerBeanDefinition("lessonRepository", LessonRepository__TestContext001_BeanDefinitions.getLessonRepositoryBeanDefinition());
-    beanFactory.registerBeanDefinition("jpa.named-queries#1", PropertiesBasedNamedQueries__TestContext001_BeanDefinitions.getNamedqueriesBeanDefinition1());
-    beanFactory.registerBeanDefinition("jpa.CourseRepository.fragments#0", RepositoryComposition__TestContext001_BeanDefinitions.RepositoryFragments__BeanDefinitions.getFragmentsBeanDefinition1());
+    beanFactory.registerBeanDefinition("jpa.CourseRepository.fragments#0", RepositoryComposition__TestContext001_BeanDefinitions.RepositoryFragments__BeanDefinitions.getFragmentsBeanDefinition());
     beanFactory.registerBeanDefinition("courseRepository", CourseRepository__TestContext001_BeanDefinitions.getCourseRepositoryBeanDefinition());
+    beanFactory.registerBeanDefinition("jpa.named-queries#1", PropertiesBasedNamedQueries__TestContext001_BeanDefinitions.getNamedqueriesBeanDefinition1());
+    beanFactory.registerBeanDefinition("jpa.LessonRepository.fragments#0", RepositoryComposition__TestContext001_BeanDefinitions.RepositoryFragments__BeanDefinitions.getFragmentsBeanDefinition1());
+    beanFactory.registerBeanDefinition("lessonRepository", LessonRepository__TestContext001_BeanDefinitions.getLessonRepositoryBeanDefinition());
     beanFactory.registerBeanDefinition("jpa.named-queries#2", PropertiesBasedNamedQueries__TestContext001_BeanDefinitions.getNamedqueriesBeanDefinition2());
     beanFactory.registerBeanDefinition("jpa.NewTopicRepository.fragments#0", RepositoryComposition__TestContext001_BeanDefinitions.RepositoryFragments__BeanDefinitions.getFragmentsBeanDefinition2());
     beanFactory.registerBeanDefinition("newTopicRepository", NewTopicRepository__TestContext001_BeanDefinitions.getNewTopicRepositoryBeanDefinition());
