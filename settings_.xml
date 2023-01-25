@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Authenticating to GitHub Packages with a personal access token-->
 <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns="http://maven.apache.org/SETTINGS/1.0.0"
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
@@ -27,7 +28,7 @@
     <server>
       <id>github</id>
       <username>tharindanimnajith</username>
-      <password>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</password>
+      <password>TOKEN</password>
     </server>
   </servers>
 </settings>

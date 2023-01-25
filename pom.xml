@@ -2,39 +2,6 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <!--Authenticating to GitHub Packages with a personal access token-->
-  <!--<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"-->
-  <!--          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
-  <!--          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">-->
-  <!--  <activeProfiles>-->
-  <!--    <activeProfile>github</activeProfile>-->
-  <!--  </activeProfiles>-->
-  <!--  <profiles>-->
-  <!--    <profile>-->
-  <!--      <id>github</id>-->
-  <!--      <repositories>-->
-  <!--        <repository>-->
-  <!--          <id>central</id>-->
-  <!--          <url>https://repo1.maven.org/maven2</url>-->
-  <!--        </repository>-->
-  <!--        <repository>-->
-  <!--          <id>github</id>-->
-  <!--          <url>https://maven.pkg.github.com/tharindanimnajith/course-api</url>-->
-  <!--          <snapshots>-->
-  <!--            <enabled>true</enabled>-->
-  <!--          </snapshots>-->
-  <!--        </repository>-->
-  <!--      </repositories>-->
-  <!--    </profile>-->
-  <!--  </profiles>-->
-  <!--  <servers>-->
-  <!--    <server>-->
-  <!--      <id>github</id>-->
-  <!--      <username>tharindanimnajith</username>-->
-  <!--      <password>TOKEN</password>-->
-  <!--    </server>-->
-  <!--  </servers>-->
-  <!--</settings>-->
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.springframework.boot</groupId>
