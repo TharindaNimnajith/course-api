@@ -26,7 +26,7 @@ public class LessonService {
     }
 
     public List<Lesson> getLessons() {
-        return (List<Lesson>) lessonRepository.findAll();
+        return lessonRepository.findAll();
     }
 
     public List<Lesson> getLessonsByName(String name) {
