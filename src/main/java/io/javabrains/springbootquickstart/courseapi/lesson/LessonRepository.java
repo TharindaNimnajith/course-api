@@ -55,16 +55,20 @@ import java.util.List;
 //     - params: id (must not be null)
 //
 // 09. void delete(T entity)
-//     -
+//     - deletes a given entity
+//     - params: entity (must not be null)
 //
 // 10. void deleteAllById(Iterable<? extends ID> ids)
-//     -
+//     - deletes all instances of the type T with the given ids
+//     - entities that are not found in the persistence store are silently ignored
+//     - params: ids (must not be null and must not contain null elements)
 //
 // 11. void deleteAll(Iterable<? extends T> entities)
-//     -
+//     - deletes the given entities
+//     - params: entities (must not be null and must not contain null elements)
 //
 // 12. void deleteAll()
-//     -
+//     - deletes all entities managed by the repository
 //
 //
 // ListCrudRepository

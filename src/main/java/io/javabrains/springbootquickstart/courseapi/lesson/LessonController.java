@@ -42,6 +42,7 @@ public class LessonController {
         lessonService.deleteLesson(id);
     }
 
+
     @SuppressWarnings("MVCPathVariableInspection")
     @GetMapping("topics/{topicId}/courses/{courseId}/lessons/{id}")
     public Lesson getLesson(@PathVariable String id) {

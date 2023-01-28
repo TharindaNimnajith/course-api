@@ -19,9 +19,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +238,7 @@
       <workItem from="1674753254721" duration="822000" />
       <workItem from="1674754140002" duration="44000" />
       <workItem from="1674810558290" duration="7711000" />
-      <workItem from="1674911020954" duration="6352000" />
+      <workItem from="1674911020954" duration="8524000" />
     </task>
     <task id="LOCAL-00001" summary="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools">
       <created>1673171245212</created>
@@ -551,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674815522870</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="jpa repository inherited methods">
+      <created>1674917495057</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1674917495057</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
