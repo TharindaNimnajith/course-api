@@ -17,16 +17,23 @@ public class LessonController {
 
     @SuppressWarnings("MVCPathVariableInspection")
     @PostMapping("topics/{topicId}/courses/{courseId}/lessons")
-    public void addLesson(@RequestBody Lesson lesson, @PathVariable String courseId) {
+    public Lesson addLesson(@RequestBody Lesson lesson, @PathVariable String courseId) {
         lesson.setCourse(new Course(courseId, "", "", ""));
-        lessonService.saveLesson(lesson);
+        return lessonService.saveLesson(lesson);
+    }
+
+    @SuppressWarnings("MVCPathVariableInspection")
+    @PostMapping("topics/{topicId}/courses/{courseId}/lessons/bulk")
+    public List<Lesson> addAllLessons(@RequestBody List<Lesson> lessons, @PathVariable String courseId) {
+        lessons.forEach(lesson -> lesson.setCourse(new Course(courseId, "", "", "")));
+        return lessonService.saveAllLessons(lessons);
     }
 
     @SuppressWarnings("MVCPathVariableInspection")
     @PutMapping("topics/{topicId}/courses/{courseId}/lessons")
-    public void updateLesson(@RequestBody Lesson lesson, @PathVariable String courseId) {
+    public Lesson updateLesson(@RequestBody Lesson lesson, @PathVariable String courseId) {
         lesson.setCourse(new Course(courseId, "", "", ""));
-        lessonService.saveLesson(lesson);
+        return lessonService.saveLesson(lesson);
     }
 
     @SuppressWarnings("MVCPathVariableInspection")
@@ -55,6 +62,21 @@ public class LessonController {
     @GetMapping("topics/{topicId}/courses/{courseId}/lessons")
     public List<Lesson> getLessonsByCourseId(@PathVariable String courseId) {
         return lessonService.getLessonsByCourseId(courseId);
+    }
+
+    @PostMapping("lessons")
+    public List<Lesson> getLessonsByIds(@RequestBody List<String> ids) {
+        return lessonService.getLessonsByIds(ids);
+    }
+
+    @GetMapping("lessons/exists/{id}")
+    public boolean hasLesson(@PathVariable String id) {
+        return lessonService.hasLesson(id);
+    }
+
+    @GetMapping("lessons/count")
+    public long countLessons() {
+        return lessonService.countLessons();
     }
 
 }

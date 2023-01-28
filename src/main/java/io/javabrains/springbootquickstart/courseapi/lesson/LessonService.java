@@ -13,8 +13,12 @@ public class LessonService {
         this.lessonRepository = lessonRepository;
     }
 
-    public void saveLesson(Lesson lesson) {
-        lessonRepository.save(lesson);
+    public Lesson saveLesson(Lesson lesson) {
+        return lessonRepository.save(lesson);
+    }
+
+    public List<Lesson> saveAllLessons(List<Lesson> lessons) {
+        return lessonRepository.saveAll(lessons);
     }
 
     public void deleteLesson(String id) {
@@ -35,6 +39,18 @@ public class LessonService {
 
     public List<Lesson> getLessonsByCourseId(String courseId) {
         return lessonRepository.findByCourseId(courseId);
+    }
+
+    public List<Lesson> getLessonsByIds(List<String> ids) {
+        return lessonRepository.findAllById(ids);
+    }
+
+    public boolean hasLesson(String id) {
+        return lessonRepository.existsById(id);
+    }
+
+    public long countLessons() {
+        return lessonRepository.count();
     }
 
 }

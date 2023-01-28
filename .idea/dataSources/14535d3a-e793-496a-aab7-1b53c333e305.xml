@@ -11,7 +11,7 @@
 5||-9223372036854775808|T|G
 5||10|T|G
 5||16594|T|G</Grants>
-      <IntrospectionStateNumber>1044</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1058</IntrospectionStateNumber>
       <ServerVersion>15.1</ServerVersion>
       <StartupTime>1674498708</StartupTime>
       <TimeZones>true ACDT
@@ -863,7 +863,7 @@ false Zulu
 16769||16420|C|G
 16769||16420|U|G
 16769||16729|U|G</Grants>
-      <IntrospectionStateNumber>1044</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1058</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4751,7 +4751,7 @@ idle_in_transaction_session_timeout=60000</Config>
 27023||16477|w|G
 27023||16478|w|G
 27023||16479|w|G</Grants>
-      <IntrospectionStateNumber>1044</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1058</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>747</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
