@@ -38,10 +38,30 @@ public class LessonController {
 
     @SuppressWarnings("MVCPathVariableInspection")
     @DeleteMapping("topics/{topicId}/courses/{courseId}/lessons/{id}")
-    public void deleteLesson(@PathVariable String id) {
-        lessonService.deleteLesson(id);
+    public void deleteLessonById(@PathVariable String id) {
+        lessonService.deleteLessonById(id);
     }
 
+    @SuppressWarnings("MVCPathVariableInspection")
+    @DeleteMapping("topics/{topicId}/courses/{courseId}/lessons")
+    public void deleteLesson(@RequestBody Lesson lesson) {
+        lessonService.deleteLesson(lesson);
+    }
+
+    @DeleteMapping("lessons")
+    public void deleteLessonsById(@RequestBody List<String> ids) {
+        lessonService.deleteLessonsById(ids);
+    }
+
+    @DeleteMapping("lessons/bulk")
+    public void deleteLessons(@RequestBody List<Lesson> lessons) {
+        lessonService.deleteLessons(lessons);
+    }
+
+    @DeleteMapping("lessons/all")
+    public void deleteAllLesson() {
+        lessonService.deleteAllLesson();
+    }
 
     @SuppressWarnings("MVCPathVariableInspection")
     @GetMapping("topics/{topicId}/courses/{courseId}/lessons/{id}")

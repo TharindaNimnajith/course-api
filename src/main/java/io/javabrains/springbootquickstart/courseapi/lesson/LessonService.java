@@ -21,10 +21,25 @@ public class LessonService {
         return lessonRepository.saveAll(lessons);
     }
 
-    public void deleteLesson(String id) {
+    public void deleteLessonById(String id) {
         lessonRepository.deleteById(id);
     }
 
+    public void deleteLesson(Lesson lesson) {
+        lessonRepository.delete(lesson);
+    }
+
+    public void deleteLessonsById(List<String> ids) {
+        lessonRepository.deleteAllById(ids);
+    }
+
+    public void deleteLessons(List<Lesson> lessons) {
+        lessonRepository.deleteAll(lessons);
+    }
+
+    public void deleteAllLesson() {
+        lessonRepository.deleteAll();
+    }
 
     public Lesson getLesson(String id) {
         return lessonRepository.findById(id).orElse(null);
