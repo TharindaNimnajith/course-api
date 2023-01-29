@@ -13,13 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="jpa repository inherited methods">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/14535d3a-e793-496a-aab7-1b53c333e305/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootquickstart/courseapi/lesson/LessonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gen/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootquickstart/courseapi/lesson/LessonRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +236,7 @@
       <workItem from="1674753254721" duration="822000" />
       <workItem from="1674754140002" duration="44000" />
       <workItem from="1674810558290" duration="7711000" />
-      <workItem from="1674911020954" duration="12012000" />
+      <workItem from="1674911020954" duration="15637000" />
     </task>
     <task id="LOCAL-00001" summary="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools">
       <created>1673171245212</created>
@@ -563,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674920295189</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="jpa repository inherited methods">
+      <created>1674973550082</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1674973550082</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
