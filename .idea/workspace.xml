@@ -12,13 +12,7 @@
     <option name="diagramMode" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="jpa repository inherited methods">
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug_report.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pull_request_template.md" beforeDir="false" afterPath="$PROJECT_DIR$/pull_request_template.md" afterDir="false" />
-    </list>
+    <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="jpa repository inherited methods" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -237,14 +231,7 @@
       <workItem from="1674753254721" duration="822000" />
       <workItem from="1674754140002" duration="44000" />
       <workItem from="1674810558290" duration="7711000" />
-      <workItem from="1674911020954" duration="16677000" />
-    </task>
-    <task id="LOCAL-00001" summary="spring-boot init with spring-web, data-jpa, apache-derby, and other dev-tools">
-      <created>1673171245212</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1673171245212</updated>
+      <workItem from="1674911020954" duration="16999000" />
     </task>
     <task id="LOCAL-00002" summary="code refactoring">
       <created>1673171478475</created>
@@ -575,7 +562,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674977126238</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="jpa repository inherited methods">
+      <created>1674980411322</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1674980411322</updated>
+    </task>
+    <task id="LOCAL-00050" summary="jpa repository inherited methods">
+      <created>1674980656521</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1674980656522</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
