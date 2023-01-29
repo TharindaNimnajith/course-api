@@ -116,6 +116,13 @@ import java.util.List;
 // Repository fragment to provide methods to retrieve entities using the pagination and sorting abstraction
 // This an extension to PagingAndSortingRepository returning List instead of Iterable where applicable
 //
+// Sort - sort option for queries
+//      - need to provide at least a list of properties to sort for that must not include null or empty strings
+//      - direction defaults to DEFAULT_DIRECTION (Direction.ASC), Direction.DESC
+//      - public static Sort by(Direction direction, String... properties)
+//      - public static Sort by(List<Order> orders)
+//      - public Order(@Nullable Direction direction, String property)
+//
 // 01. List<T> findAll(Sort sort)
 //     - returns all entities sorted by the given options
 //     - params: sort (the Sort specification to sort the results by, can be Sort.unsorted(), must not be null)
