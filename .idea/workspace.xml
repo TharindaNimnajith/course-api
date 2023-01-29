@@ -12,7 +12,11 @@
     <option name="diagramMode" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="jpa repository inherited methods" />
+    <list default="true" id="130a634e-2227-4457-ad70-a3fc5b468762" name="Changes" comment="jpa repository inherited methods">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/profiles_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notes/profiles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/settings_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notes/settings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,11 +158,11 @@
       <recent name="D:\course-api\target\generated-test-sources\test-annotations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\course-api\notes" />
       <recent name="D:\course-api\gen\target\generated-sources\annotations" />
       <recent name="D:\course-api\diagrams\actuator" />
       <recent name="D:\course-api\diagrams" />
       <recent name="D:\course-api\openapi\hello" />
-      <recent name="D:\course-api\generated-api-requests\hello" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.CourseApiApplication">
@@ -231,14 +235,7 @@
       <workItem from="1674753254721" duration="822000" />
       <workItem from="1674754140002" duration="44000" />
       <workItem from="1674810558290" duration="7711000" />
-      <workItem from="1674911020954" duration="16999000" />
-    </task>
-    <task id="LOCAL-00002" summary="code refactoring">
-      <created>1673171478475</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1673171478475</updated>
+      <workItem from="1674911020954" duration="17496000" />
     </task>
     <task id="LOCAL-00003" summary="hello controller, get mappings, redirects, openapi, request generation, log levels">
       <created>1673205679071</created>
@@ -576,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674980656522</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="jpa repository inherited methods">
+      <created>1674980886857</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1674980886857</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
